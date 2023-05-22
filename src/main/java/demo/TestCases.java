@@ -51,43 +51,43 @@ public class TestCases {
 
     }
 //SESSION 4 ASSIGMENTS
-    public void testCase07() throws InterruptedException, AWTException{
+    public void testCase08() throws InterruptedException, AWTException{
         
-        System.out.println("Start Test case: testCase07");
-        NestedFramesText NestedFrames = new NestedFramesText();
-        NestedFrames.NestedFramesT();
+        System.out.println("Start Test case: testCase08");
+        AlertPrompt Alert = new AlertPrompt();
+        Alert.NameAlert();
         
-//             public void testCase07() {
-//         System.out.println("Start testCase: testCase07");
-//         //Navigate to URL  https://the-internet.herokuapp.com/nested_frames
-//         driver.get("https://the-internet.herokuapp.com/nested_frames");
-//         driver.switchTo().frame("frame-top");
-//         driver.switchTo().frame("frame-left");
+//     public void testCase08() throws InterruptedException{
+//         System.out.println("Start testCase: testCase08");
+
+//         //navigate to the url https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_prompt
+//         driver.get("https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_prompt");
+//         // Go to the iframe where "try it" button is present Using Xpath //iframe[@name='iframeResult']
+//         WebElement framess = driver.findElement(By.xpath("//iframe[@name='iframeResult']"));
+//         driver.switchTo().frame(framess);
         
-//         //Search for the first BODY in html code Using Locator "XPath" //body[contains(text(),'LEFT')]
-//         String leftText = driver.findElementByXPath("//body[contains(text(),'LEFT')]").getText();
-//         System.out.println("First Text: "+ leftText);
-
-//         driver.switchTo().parentFrame();
-//         driver.switchTo().frame("frame-middle");
-
-//         //Search for the middle BODY in html code Using Locator "XPath" //div[contains(text(),'MIDDLE')]
-//         String middleText = driver.findElementByXPath("//div[contains(text(),'MIDDLE')]").getText();
-//         System.out.println("Second Text: "+ middleText);
-
-//         driver.switchTo().parentFrame();
-//         driver.switchTo().frame("frame-right");
-
-//         //Search for the RIGHT BODY in html code Using Locator "XPath" //body[contains(text(),'RIGHT')]
-//         String rightText = driver.findElementByXPath("//body[contains(text(),'RIGHT')]").getText();
-//         System.out.println("Third Text: "+ rightText);
-
-//         driver.switchTo().defaultContent();
-//         driver.switchTo().frame("frame-bottom");
-
-//         //Search for the BOTTOM BODY in html code Using Locator "XPath" //body[contains(text(),'BOTTOM')]
-//         String belowText = driver.findElementByXPath("//body[contains(text(),'BOTTOM')]").getText();
-//         System.out.println("Fourth Text: "+ belowText);
+//         // click on the "try it" button
+//         driver.findElement(By.xpath("//button[text()='Try it']")).click();
+        
+//         //switch to the javascript alert
+//         Alert alert =  driver.switchTo().alert();
+        
+//         //print the text on the alert
+//         String text = alert.getText();
+//         System.out.println("The text message written in the alert is : "+ text);
+       
+//         // send your name to alert text field and accept it
+//         alert.sendKeys("Puja Layek");
+//         Thread.sleep(2000);
+//         alert.accept();
+        
+//         // check if your name is get printed or not
+//         WebElement validation = driver.findElement(By.xpath("//p[@id='demo']"));
+//         if(validation.getText().equals("Hello Puja Layek! How are you today?")){
+//             System.out.println("Yes the name is getting printed");
+//         }else{
+//             System.out.println("Name is not getting printed");
+//         }
     }
 
 }
