@@ -51,48 +51,59 @@ public class TestCases {
 
     }
 //SESSION 4 ASSIGMENTS
-    public void testCase09() throws InterruptedException, AWTException{
+    public void testCase10() throws InterruptedException {
         
-        System.out.println("Start Test case: testCase09");
-        IMDBRatings Ratings = new IMDBRatings();
-        Ratings.ImdbRtg();
+        System.out.println("Start Test case: testCase10");
+        WindowHandle bookMyShow = new WindowHandle();
+        bookMyShow.windowBook();
         
 
-//     public void testCase09(){
-//         System.out.println("Start testCase: testCase09");
-//         //navigate to url "https://www.imdb.com/chart/top"
-//         driver.get("https://www.imdb.com/chart/top");
+//     public void testCase10() throws InterruptedException{
+//         System.out.println("Start testCase: testCase10");
+//         //navigate to the url "https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_open"
+//         driver.get("https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_open");
         
-//         // print the highest rated movies of the list By using Xpath //strong[text()='9.2']//parent::td//preceding-sibling::td[1]/a
-//         List<WebElement> highestRated = driver.findElements(By.xpath("//strong[text()='9.2']//parent::td//preceding-sibling::td[1]/a"));
-//         System.out.println("Highest rated movies are as follows :-");
-//         for(WebElement movie: highestRated){
-//             System.out.println(movie.getText());
+//         // save the current window handle address
+//         String currWindow = driver.getWindowHandle();
+        
+//         //Go to the frame where the "try it" button is present Using Locator "XPath" //iframe[@name='iframeResult']
+//         WebElement iframe = driver.findElement(By.xpath("//iframe[@name='iframeResult']"));
+//         driver.switchTo().frame(iframe);
+        
+//         // click on the "try it" button Using Locator "XPath //button[@onclick='myFunction()']
+//         WebElement button = driver.findElement(By.xpath("//button[@onclick='myFunction()']"));
+        
+//         // JavascriptExecutor js = (JavascriptExecutor) driver;
+//         // js.executeScript("arguments[0].click();", button);
+//         Actions act = new Actions(driver);
+//         act.moveToElement(button).click().build().perform();
+//         Thread.sleep(3000);
+        
+//         // save the address of newly open window and switch to it
+//         Set<String> windows = driver.getWindowHandles();
+//         for (String window: windows){
+//             if(!window.equals(currWindow)){
+//                 driver.switchTo().window(window);
+//             }
 //         }
-        
-//         //print how many movies are included in the list By using Xpath //tbody[@class='lister-list']/tr
-//         List<WebElement> movies = driver.findElements(By.xpath("//tbody[@class='lister-list']/tr"));
-//         System.out.println("Number of movies included in the list is : "+movies.size());
-         
-//         //print the oldest movie of the list By using Xpath //span[text()='(1921)']/preceding-sibling::a
-//         WebElement oldest = driver.findElement(By.xpath("//span[text()='(1921)']/preceding-sibling::a"));
-//         System.out.println("Oldest movie of the list is : "+oldest.getText());
-        
-//         //print the most recent movies of the list By using Xpath //span[text()='(2023)']/preceding-sibling::a
-//         List<WebElement> recentMovies = driver.findElements(By.xpath("//span[text()='(2023)']/preceding-sibling::a"));
-//         System.out.println("Most recent movies are as follows :-");
-//         for(WebElement film: recentMovies){
-//             System.out.println(film.getText());
+//         // Get the url, title and take screenshot then close the window
+//         String currUrl = driver.getCurrentUrl();
+//         System.out.println("current url is : "+currUrl);
+//         String title = driver.getTitle();
+//         System.out.println("title of the page is : "+title);
+//         try {
+//             TakesScreenshot scrShot = ((TakesScreenshot) driver);
+//             File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
+//             File DestFile = new File("C:\\Users\\sayan\\OneDrive\\Desktop\\picture\\W3SchoolImage.png");
+//             Files.copy(SrcFile, DestFile);
+//         } catch (Exception e) {
+//             e.printStackTrace();
 //         }
-        
-//         //print the highest user rating in figure By using Xpath //tbody[@class='lister-list']/tr//td[3]/strong[text()='9.2'])[1]
-//         WebElement rating = driver.findElement(By.xpath("(//tbody[@class='lister-list']/tr//td[3]/strong[text()='9.2'])[1]"));
-//         System.out.println("Highest user ratings are : "+rating.getAttribute("title"));
-        
-//         //Print the movie with most user rating By using Xpath //tbody[@class='lister-list']/tr//td[3]/strong[text()='9.2'])[1]/parent::td/preceding-sibling::td[1]/a
-//         WebElement mostRated = driver.findElement(By.xpath("(//tbody[@class='lister-list']/tr//td[3]/strong[text()='9.2'])[1]/parent::td/preceding-sibling::td[1]/a"));
-//         System.out.println("Most user rated movie name is : "+ mostRated.getText());
+//         driver.close();
+//         // switch back to the original window
+//         driver.switchTo().window(currWindow);
 //     }
+ 
     }
 
 }
