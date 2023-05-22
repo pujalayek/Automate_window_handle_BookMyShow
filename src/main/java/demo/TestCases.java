@@ -51,55 +51,43 @@ public class TestCases {
 
     }
 //SESSION 4 ASSIGMENTS
-    public void testCase06() throws InterruptedException, AWTException{
+    public void testCase07() throws InterruptedException, AWTException{
         
-        System.out.println("Start Test case: testCase06");
-        ImagepostLinkin imagevideo = new ImagepostLinkin();
-        imagevideo.PostImage();
+        System.out.println("Start Test case: testCase07");
+        NestedFramesText NestedFrames = new NestedFramesText();
+        NestedFrames.NestedFramesT();
         
-//             // Navigate to URL https://www.linkedin.com/
-//     driver.get("https://www.linkedin.com/");
-//     // Type "Email or phone: in Username textbox Using Locator "Name" session_key
-//     driver.findElementByName("session_key").sendKeys("pujalayek93@gmail.com");
-//     // Type "Password" in password textbox Using Locator "Name" session_password
-//     driver.findElementByName("session_password").sendKeys("D0ryL@yek93");
-//     // Click on "Sign in" button Using Locator "XPath" //button[@type='submit']
-//     driver.findElementByXPath("//button[@type='submit']").click();
-//     // Click on "Photo" button Using Locator "XPath" //button[@aria-label='Add a
-//     // photo']
-//     driver.findElementByXPath("//button[@aria-label='Add a photo']").click();
-//    Thread.sleep(2000);  
-    
-//    // Select the photo with the help of Robot Class
-//     StringSelection s = new StringSelection("C:\\Users\\sayan\\OneDrive\\Desktop\\picture\\natureLove.jpeg");
-//     Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s, null);
-//     Robot robot = new Robot();   // Robot class throws AWT Exception
-//     robot.delay(1000);
-    
-//     robot.keyPress(KeyEvent.VK_CONTROL);    //Press ctrl+v
-//     robot.keyPress(KeyEvent.VK_V);          //Press ctrl+v
+//             public void testCase07() {
+//         System.out.println("Start testCase: testCase07");
+//         //Navigate to URL  https://the-internet.herokuapp.com/nested_frames
+//         driver.get("https://the-internet.herokuapp.com/nested_frames");
+//         driver.switchTo().frame("frame-top");
+//         driver.switchTo().frame("frame-left");
+        
+//         //Search for the first BODY in html code Using Locator "XPath" //body[contains(text(),'LEFT')]
+//         String leftText = driver.findElementByXPath("//body[contains(text(),'LEFT')]").getText();
+//         System.out.println("First Text: "+ leftText);
 
-//     robot.keyRelease(KeyEvent.VK_V);        //Release ctrl+v
-//     robot.keyRelease(KeyEvent.VK_CONTROL);  //Release ctrl+v
+//         driver.switchTo().parentFrame();
+//         driver.switchTo().frame("frame-middle");
 
-//     // robot.keyPress(KeyEvent.VK_ENTER);
-//     robot.delay(1000);
+//         //Search for the middle BODY in html code Using Locator "XPath" //div[contains(text(),'MIDDLE')]
+//         String middleText = driver.findElementByXPath("//div[contains(text(),'MIDDLE')]").getText();
+//         System.out.println("Second Text: "+ middleText);
 
-//     // robot.keyRelease(KeyEvent.VK_ENTER);
-//     robot.keyPress(KeyEvent.VK_ENTER);      //Press Enter
-//     robot.keyRelease(KeyEvent.VK_ENTER);    //Release Enter
-//     robot.delay(2000);
-    
-//     //Click on the"Done" button Using Locator "XPath" //div[@class='share-box-footer__main-actions']//button[2]
-//     driver.findElementByXPath("//div[@class='share-box-footer__main-actions']//button[2]").click();
+//         driver.switchTo().parentFrame();
+//         driver.switchTo().frame("frame-right");
 
-//     //Click on "Post" button Using Locator "XPath" //button[contains(@class,'share-actions__primary-action artdeco-button')]
-//     driver.findElementByXPath("//button[contains(@class,'share-actions__primary-action artdeco-button')]").click();
+//         //Search for the RIGHT BODY in html code Using Locator "XPath" //body[contains(text(),'RIGHT')]
+//         String rightText = driver.findElementByXPath("//body[contains(text(),'RIGHT')]").getText();
+//         System.out.println("Third Text: "+ rightText);
 
-//     //Verify that "Post successful" message is displayed Using Locator "XPath" //*[text()='Post successful.']
-//     boolean isDisplayed = driver.findElementByXPath("//*[text()='Post successful.']").isDisplayed();
-//     System.out.println("Post is posted successfully: " + isDisplayed);
-//     }
-            }
+//         driver.switchTo().defaultContent();
+//         driver.switchTo().frame("frame-bottom");
+
+//         //Search for the BOTTOM BODY in html code Using Locator "XPath" //body[contains(text(),'BOTTOM')]
+//         String belowText = driver.findElementByXPath("//body[contains(text(),'BOTTOM')]").getText();
+//         System.out.println("Fourth Text: "+ belowText);
+    }
 
 }
